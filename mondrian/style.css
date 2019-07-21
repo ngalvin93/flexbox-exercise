@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 /* START OF EXERCISE */
 div {
@@ -48,11 +48,18 @@ body {
 .column-2-row-1-column-2 {
     display: flex;
     flex-direction: column;
+    height: 100%;
     flex: 1;
 }
-.column-2-row-1-column-2-item-1, ..column-2-row-1-column-2-item-2 {
+.column-2-row-1-column-2-item-1 {
     flex: 2;
+    background-color: aqua;
+}
+.column-2-row-1-column-2-item-2 {
+    flex: 2;
+    background-color: blue;
 }
 .column-2-row-1-column-2-item-3 {
     flex: 1;
+    background-color: red;
 }
