@@ -24,23 +24,21 @@ body {
     display: flex;
     height: 60px;
     flex-direction: row;
-    background-color: aqua;
     justify-content: space-between;
 }
 .row-reverse {
     display: flex;
     height: 60px;
     flex-direction: row-reverse;
-    background-color: aqua;
     justify-content: space-between;
 }
 .square-1 {
     background-color: #ffe9bf;
     border: 1px black solid;
-    width: 60px;
+    flex: 1;
 }
 .square-2 {
     background-color: #e4b45b;
     border: 1px black solid;
-    width: 60px;
+    flex: 1;
 }
