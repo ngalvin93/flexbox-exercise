@@ -6,9 +6,9 @@
 }
 /* START OF EXERCISE */
 :root {
-    --yellow: rgb(247, 223, 7);
-    --blue: rgb(21, 63, 199);
-    --red: rgb(216, 29, 29);
+    --yellow: rgb(250, 239, 140);
+    --blue: rgb(23, 65, 180);
+    --red: rgb(202, 63, 39);
 }
 div {
     border: 1px black solid;
@@ -39,6 +39,7 @@ body {
     display: flex;
     flex: 1;
 }
+/* START OF MIDDLE COLUMN */
 .column-2-row-1 {
     display: flex;
     height: 50%;
@@ -151,3 +152,4 @@ body {
     flex: 1;
     background-color: black;
 }
+/* END OF MIDDLE COLUMN */
