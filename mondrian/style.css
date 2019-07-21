@@ -5,6 +5,11 @@
     box-sizing: content-box;
 }
 /* START OF EXERCISE */
+:root {
+    --yellow: rgb(247, 223, 7);
+    --blue: rgb(21, 63, 199);
+    --red: rgb(216, 29, 29);
+}
 div {
     border: 1px black solid;
     background-color: rgb(196, 222, 255);
@@ -43,23 +48,106 @@ body {
     height: 50%;
 }
 .column-2-row-1-column-1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
     flex: 1;
+}
+.blah {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
 }
 .column-2-row-1-column-2 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 50%;
     flex: 1;
+}
+.column-2-row-1-column-1-item-1 {
+    flex: 1;
+    background-color: var(--yellow);
+}
+.column-2-row-1-column-1-item-2 {
+    flex: 2;
+    background-color: var(--yellow);
+}
+.column-2-row-1-column-1-item-3 {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+.column-2-row-1-column-1-item-3-sub-1 {
+    flex: 1;
+    width: 50%;
+    background-color: white;
+}
+.column-2-row-1-column-1-item-3-sub-2 {
+    flex: 1;
+    background-color: white;
 }
 .column-2-row-1-column-2-item-1 {
     flex: 2;
-    background-color: aqua;
+    background-color: var(--blue);
 }
 .column-2-row-1-column-2-item-2 {
     flex: 2;
-    background-color: blue;
+    background-color: var(--red);
 }
 .column-2-row-1-column-2-item-3 {
     flex: 1;
-    background-color: red;
+    background-color: white;
+}
+
+/* quadrant 5 */
+.column-2-row-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.column-2-row-2-column-1, .column-2-row-2-column-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.column-2-row-2-column-1-item-1 {
+    flex: 1;
+    background-color: white;
+}
+.column-2-row-2-column-1-item-2 {
+    flex: 2;
+    background-color: var(--blue);
+}
+.column-2-row-2-column-1-item-3 {
+    flex: 2;
+    background-color: var(--red);
+}
+.column-2-row-2-column-2-row-1 {
+    display: flex;
+    height: 40%;
+}
+.column-2-row-2-column-2-row-1-item-1, .column-2-row-2-column-2-row-1-item-2 {
+    flex: 1;
+    background-color: white;
+}
+.column-2-row-2-column-2-row-2 {
+    display: flex;
+    height: 40%;
+    background-color: var(--yellow);
+}
+.column-2-row-2-column-2-row-3 {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    background-color: var(--red);
+}
+.column-2-row-2-column-2-row-3-item-1 {
+    flex: 1;
+    background-color: white;
+}
+.column-2-row-2-column-2-row-3-item-2 {
+    flex: 1;
+    background-color: black;
 }
